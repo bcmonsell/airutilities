@@ -1,0 +1,39 @@
+Package: airutilities
+Title: Support routines for fractional airline decomposition routines in the rjd3highfreq package
+Version: 3.1
+Authors@R: 
+    person(given = "Brian",
+           family = "Monsell",
+           role = c("aut", "cre"),
+           email = "Monsell.Brian@bls.gov")
+Description: Utilities that support the use of the fractional airline decomposition routines
+    from Demetra version 3 from the rjd3highfreq package, including routines to generate outlier 
+    and holiday regressors, assign outlier and calendar regression based factors to different 
+    components (as in X-13ARIMA-SEATS), summarize estimated model coefficients, and generate 
+    factor plots and boxplots by week. Note that for some routines, series are assumed to be 
+    formatted by the tis package, and were developed for use with weekly time series. 
+    Plotting routines for weekly series are included, with a high density plotting function 
+    for components. Routines have been added that use xts time series objects.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: TRUE
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.2
+Imports:
+    checkmate,
+    lubridate,
+    rjd3highfreq,
+    timeDate,
+    tis,
+    xts,
+    zoo,
+    RCurl,
+    RProtoBuf,
+    mathjaxr,
+    rJava,
+    rjd3modelling,
+    rjd3sa,
+    rjd3sts,
+    rjd3toolkit
+Depends: 
+    R (>= 2.10)
